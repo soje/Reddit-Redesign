@@ -15,7 +15,7 @@ struct UserFeed: View {
     
     var body: some View {
         
-        ScrollView{
+        ScrollView(showsIndicators: false){
             VStack(spacing:0){
                 
                 VideoLiveCarousel(
@@ -32,6 +32,7 @@ struct UserFeed: View {
                 
             }
         }
+        .background(Color(red: 219/255, green: 219/255, blue: 219/255))
         
     }
 }

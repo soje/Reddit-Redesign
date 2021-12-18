@@ -11,6 +11,8 @@ import SwiftUI
 
 struct Post {
     
+    var id:UUID = UUID()
+    
     var subreddit:String
     var subredditImage:Image
     var user:String
@@ -18,5 +20,6 @@ struct Post {
     var title:String
     var postContent:String
     var votes:Int
+    var dateOfPublishing:Date
     
 }
